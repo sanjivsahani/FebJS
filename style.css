@@ -1,13 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-button {
+
+.btn {
     height: 40px;
     width: 40px;
-    color: aqua;
-    background-color: black;
+    color: red;
+    margin: 5px;
+    font-size: 25px;
 }
-#cal {
-    margin: 10px 20%;
+.input_text{
+    height: 30px;
+    width: 200px;
+    margin: 5px auto;
+    font-size: 25px;
 }
+.cal_container{
+    height: 260px;
+    width: 215px;
+    padding: 10px 5px;
+    margin: 5% 20%;
+    border: 2px solid red;
+    border-radius:12px ;
+    background: #cfc8c8;
+}
+ 

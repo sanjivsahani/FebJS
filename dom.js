@@ -2,6 +2,7 @@
 document.getElementById('header').innerHTML = `<h1>this is a header</h1>`
 
 let lis = document.getElementsByClassName('lis')
+console.log(Array.from(lis))
 Array.from(lis).forEach((ele) => {
     ele.innerHTML = "this is the li"
     ele.addEventListener('click', (function () {
@@ -9,6 +10,15 @@ Array.from(lis).forEach((ele) => {
     }))
 })
 
+let arr = [1,5,8,9,6]
+
+for(let i=0 ; i<arr.length;i++){
+    // console.log(arr[i])
+}
+
+arr.forEach((ele)=>{
+    console.log(ele)
+})
 const characters = [
     {
         name: "Luke Skywalker",
