@@ -1,4 +1,4 @@
- 
+
 let numbers = [0, 1, 101, 2, 3, 10, 20, 30];
 numbers.sort(function (a, b) {
     if (a > b) return 1;
@@ -153,14 +153,45 @@ const characters = [
 ];
 
 
-characters.map(({name,height,mass} , ind)=>{
-    document.write(`${ind+1} name of the character is ${name}  height is  ${height} </br>`)
+characters.map(({ name, height, mass }, ind) => {
+    document.write(`${ind + 1} name of the character is ${name}  height is  ${height} </br>`)
 })
 
 let result = characters.filter((characters => characters.gender == "male"))
 console.log(result)
 
-characters.forEach((characters)=>{
+characters.forEach((characters) => {
     console.log(characters.gender == 'female')
 })
+//  normal Function 
+
+function addTwoValue(num1, num2) {
+    return num1 + num2
+}
+console.log(addTwoValue(5, 8))
+
+const func = ()=>{
+    console.log("helllo func")
+}
+func()
+
+
+const array1 = [1, 2, 3, 4];
+const initialValue = 0;
+const sumWithInitial = array1.reduce((accumulator, currentValue),()=>{
+
+})
+
+console.log(sumWithInitial);
+
+function myFirst(mySecond) {
+    myDisplayer("Hello");
+    mySecond()
+  }
+  
+  function mySecond() {
+    myDisplayer("Goodbye");
+  }
+  
+  myFirst(mySecond);
 
