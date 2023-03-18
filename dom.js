@@ -4,7 +4,7 @@ document.getElementById('header').innerHTML = `<h1>this is a header</h1>`
 let lis = document.getElementsByClassName('lis')
 console.log(Array.from(lis))
 Array.from(lis).forEach((ele) => {
-    ele.innerHTML = "this is the li"
+    ele.innerHTML = "this is a new list "
     ele.addEventListener('click', (function () {
         ele.style.color = "red"
     }))
@@ -35,7 +35,7 @@ const characters = [
         gender: "male",
     },
     {
-        name: "Leia Organa",
+        name: "lila Wati",
         height: 150,
         mass: 49,
         eye_color: "brown",
