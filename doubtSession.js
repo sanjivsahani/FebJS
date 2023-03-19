@@ -85,11 +85,47 @@ const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
 
 // const result = words.filter(word => word.length > 9);
 
- 
 
 
- 
 
- console.log((5>6) ?"big":"small" )
 
+
+console.log((5 > 6) ? "big" : "small")
+
+// let str = ''let index = 5; for (let i = 1; i <= index; i++) { for (let j = 1; j <= i; j++) { str += j; } str += '\n'; } console.log(str); for (let i = 5; i >= index; i--) { for (let j = 1; j <= i; j++) { str += j; } str += '\n'; } console.log(str);
+
+let index = 5;
+let string = "";
+for (let i = 1; i <= index; i++) {
+    for (let j = 0; j < i; j++) {
+        string += "*";
+        string += ' '
+    }
+    string += "\n";
+}
+// console.log(string);
+for (let i = 1; i <= index - 1; i++) {
+    for (let j = 0; j < index - i; j++) {
+        string += "*";
+        string += ' '
+    }
+    string += "\n";
+}
+console.log(string);
+
+let n = 5;
+let str = ''
+for (let i = 0; i <= 5; i++) {
+    for (let k = 1; k <= i; k++) {
+        str += "*"
+    }
+    str += '\n'
+}
+for (let i = 4; i >= 1; i--) {
+    for (let k = 1; k <= i; k++) {
+        str += "*"
+    }
+    str += '\n'
+}
+console.log(str)
 
