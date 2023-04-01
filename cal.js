@@ -9,14 +9,18 @@ button_nums.forEach((ele) => {
         if (e.target.innerText === 'C') {
             document.getElementById('calculation').value = ''
             location.reload();
+            console.log("this is number" , num)
+
         }
        else if (e.target.innerText === '=') {
             console.log(eval(num))
             document.getElementById('calculation').value = eval(num)
+            console.log(num)
         }
         else {
             num += e.target.innerText
             document.getElementById('calculation').value = num
+            console.log(num)
         }
     })
 })
