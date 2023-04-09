@@ -172,4 +172,6 @@ function greetmassage_name(arr) {
     }
 }
 greetmassage_name(person_name)
+
+console.log("index.js")
  

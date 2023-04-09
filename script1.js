@@ -195,3 +195,4 @@ function myFirst(mySecond) {
   
   myFirst(mySecond);
 
+console.log("hello script.1")

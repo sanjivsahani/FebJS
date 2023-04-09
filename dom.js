@@ -54,3 +54,5 @@ let player = characters.filter(characters =>characters.gender === "female")
 console.log(player)
 let playername =  player[0].name
 document.getElementById('player_name').innerHTML  =  `the Female player name is ${playername}`
+
+console.log("hello dom js ")
